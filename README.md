@@ -1,1 +1,3 @@
 # OracleCoreEntityFrameworkDF
+
+Database First Approach
