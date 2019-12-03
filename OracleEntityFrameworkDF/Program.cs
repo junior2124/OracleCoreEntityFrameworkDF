@@ -175,6 +175,7 @@ namespace OracleEntityFrameworkDF
 
 
                 // FROMSQL EXAMPLES: 
+                // STORED PROCEDURE       
                 var P_CUR = new OracleParameter("curParam", OracleDbType.RefCursor, System.Data.ParameterDirection.Output);
                 var refCur = db.CompanyAddress.FromSql("BEGIN GET_COMPADDR_PROC(:curParam); END;", new object[] { P_CUR }).ToList();
 
